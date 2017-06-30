@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link href="css/style.css" rel="stylesheet">-->
+    
   </head>
   <body>
     <div id="app">
       <p>{{message}}</p>
+      <span :title="title"> 鼠标悬停几秒钟查看此处动态绑定的提示信息！</span>
+      <todo-item></todo-item>
+      <button v-bind:disabled="isButton">Button</button>
     </div>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <scirpt src="./js/vue.js"></scirpt>
+    <!--<scirpt src="./js/src.js"></scirpt>-->
+    <scirpt src="./js/test.js"></scirpt>
     <script src="./js/index.js"></script>
   </body>
 </html>
